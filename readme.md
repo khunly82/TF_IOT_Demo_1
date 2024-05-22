@@ -22,8 +22,6 @@
 
 - Déclaration
 
-type nomVariable;
-
 ```cs
 int nombre;
 string nom;

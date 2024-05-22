@@ -29,17 +29,17 @@
 #endregion
 
 #region Correction Swap variables
-//int a = 5,
-//    b = 7;
+int a = 5,
+    b = 7;
 
-//Console.WriteLine($"a: {a}; b: {b}");
+Console.WriteLine($"a: {a}; b: {b}");
 
-////int temp = a;
-////a = b;
-////b = temp;
-//(a, b) = (b, a);
+//int temp = a;
+//a = b;
+//b = temp;
+(a, b) = (b, a);
 
-//Console.WriteLine($"a: {a}; b: {b}");
+Console.WriteLine($"a: {a}; b: {b}");
 #endregion
 
 #region Input
