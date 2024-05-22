@@ -242,13 +242,13 @@
 
 //Console.WriteLine("Vous êtes sorti de la boucle");
 
-int selection;
-string message = "Entrez un nombre entre 1 et 10";
-do
-{
-    Console.WriteLine(message);
-    message = "Valeur incorrecte";
-} while (!int.TryParse(Console.ReadLine(), out selection) || selection > 10 || selection < 1);
+//int selection;
+//string message = "Entrez un nombre entre 1 et 10";
+//do
+//{
+//    Console.WriteLine(message);
+//    message = "Valeur incorrecte";
+//} while (!int.TryParse(Console.ReadLine(), out selection) || selection > 10 || selection < 1);
 
 //int selection;
 //Console.WriteLine("Entre une valeur entre 1 et 10");
