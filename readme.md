@@ -41,3 +41,133 @@ nombre1 = 42;
 int nombre2 = 42
 ```
 
+- Swap
+
+```cs
+int a = 5, b = 7;
+(a, b) = (b, a);
+```
+
+- Types intégrés
+    - byte → entier
+    - short → entier
+    - int → entier
+    - long → entier
+    - decimal → nombre décimal
+    - float → nombre à virgule
+    - double → nombre à virgule
+    - bool → booléen (vrai ou faux)
+    - char → charactère
+    - string → chaîne de charactères
+    - DateTime → Date (+ heure)
+    - object → objet
+
+## Input / Ouptut
+
+- Écrire dans la console
+```cs
+// avec retour à la ligne
+Console.WriteLine("");
+
+// sans retour à la ligne
+Console.WriteLine();
+```
+
+- Lire dans la console
+```cs
+string input = Console.ReadLine();
+```
+
+## Convertir un string
+
+```cs
+// Convertir en entier
+int nb = int.Parse("42");
+
+// Convertir en Date
+DateTime date = DateTime.Parse("1982-05-06");
+```
+
+## Opérateurs
+
+- Arithmétique
+    - addition → +
+    - soustraction → -
+    - multiplication → *
+    - division → /
+    - modulo → %
+- Logique
+    - égal → ==
+    - différent → !=
+    - plus petit → <
+    - plus petit ou égal → <=
+    - plus grand → >
+    - plus grand ou égal → >=
+    - et → &&
+    - ou (inclusif) → ||
+    - ou (exclusif) → ^
+- Concaténation
+    - concaténer → +
+    - interpolation → $"hello {prenom}"
+
+## Structures conditionnelles
+
+- if
+```cs
+if(condition) {
+    // instructions si cond
+}
+```
+
+- if - else
+```cs
+if(condition) {
+    // instructions si condition
+}
+else {
+    // instructions sinon
+}
+```
+
+- if - else if - else
+```cs
+if(condition) {
+    // instructions si condition
+}
+else if(autreCondition) {
+    // instructions si autreCondition
+}
+else {
+    // instructions sinon
+}
+```
+
+- switch
+```cs
+switch(variable) {
+    case 1:
+        // instructions si variable == 1
+        break;
+    case 2:
+        // instructions si variable == 2
+        break;
+    default:
+        // instructions sinon
+        break;
+}
+```
+
+- Ternaire
+```cs
+var variable = condition ? valeurSiCondition : valeurSinon; 
+```
+
+- Switch expression
+```cs
+var variableAAffecter = variableAComparer switch {
+    valeurComparee1 => valeur1,
+    valeurComparee2 => valeur2,
+    _ => valeurSinon
+}; 
+```
+

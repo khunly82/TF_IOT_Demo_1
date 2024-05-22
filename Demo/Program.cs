@@ -203,16 +203,16 @@
 //prixPromo = prix - (prix * (promo ?? 0) / 100);
 //Console.WriteLine(prixPromo);
 
-//int jours = 42;
-////string j = jours == 1 ? "Lundi" : jours == 2 ? "Mardi" : jours == 3 ? "Mercredi": "Jeudi";//...
-//string j = jours switch
-//{
-//    1 => "Lundi",
-//    2 => "Mardi",
-//    3 => "Mercredi",
-//    4 => "Jeudi",
-//    _ => "Jour inconnu"
-//};
-//Console.WriteLine(j);
+int jours = 42;
+//string j = jours == 1 ? "Lundi" : jours == 2 ? "Mardi" : jours == 3 ? "Mercredi": "Jeudi";//...
+string j = jours switch
+{
+    1 => "Lundi",
+    2 => "Mardi",
+    3 => "Mercredi",
+    4 => "Jeudi",
+    _ => "Jour inconnu"
+};
+Console.WriteLine(j);
 
 #endregion
