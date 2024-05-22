@@ -29,17 +29,18 @@
 #endregion
 
 #region Correction Swap variables
-int a = 5,
-    b = 7;
 
-Console.WriteLine($"a: {a}; b: {b}");
+//int a = 5,
+//    b = 7;
 
-//int temp = a;
-//a = b;
-//b = temp;
-(a, b) = (b, a);
+//Console.WriteLine($"a: {a}; b: {b}");
 
-Console.WriteLine($"a: {a}; b: {b}");
+////int temp = a;
+////a = b;
+////b = temp;
+//(a, b) = (b, a);
+
+//Console.WriteLine($"a: {a}; b: {b}");
 #endregion
 
 #region Input
@@ -105,7 +106,7 @@ Console.WriteLine($"a: {a}; b: {b}");
 //Console.WriteLine($"jours : {jours}\nheures : {heures}\nminutes : {minutes}\nsecondes : {secondes}");
 #endregion
 
-# region Booléens
+#region Booléens
 //bool flag = false;
 
 //int age = 42;
@@ -216,3 +217,54 @@ Console.WriteLine($"a: {a}; b: {b}");
 //Console.WriteLine(j);
 
 #endregion
+
+#region Boucles
+
+//int selection;
+//Console.WriteLine("Entrez un nombre entre 1 et 10");
+//selection = int.Parse(Console.ReadLine());
+
+//while (selection < 1 || selection > 10)
+//{
+//    Console.WriteLine("Valeur incorrecte");
+//    selection = int.Parse(Console.ReadLine());
+//}
+
+//Console.WriteLine("Vous êtes sorti de la boucle");
+
+//double selection;
+//Console.WriteLine("Entrez un nombre entre 1 et 10");
+//do
+//{
+//    selection = double.Parse(Console.ReadLine());
+//}
+//while (selection < 1 || selection > 10);
+
+//Console.WriteLine("Vous êtes sorti de la boucle");
+
+int selection;
+string message = "Entrez un nombre entre 1 et 10";
+do
+{
+    Console.WriteLine(message);
+    message = "Valeur incorrecte";
+} while (!int.TryParse(Console.ReadLine(), out selection) || selection > 10 || selection < 1);
+
+//int selection;
+//Console.WriteLine("Entre une valeur entre 1 et 10");
+//bool valide = int.TryParse(Console.ReadLine(), out selection);
+
+//while(!valide || selection < 1 || selection > 10)
+//{
+//    Console.WriteLine("Valeur incorrecte");
+//    valide = int.TryParse(Console.ReadLine(), out selection);
+//}
+//Console.WriteLine("Valeur correcte");
+#endregion
+
+//using System.Text;
+
+//Console.OutputEncoding = Encoding.UTF8;
+//Console.SetCursorPosition(10, 10);
+//Console.ForegroundColor = ConsoleColor.Red;
+//Console.Write("♥");
