@@ -105,7 +105,7 @@
 //Console.WriteLine($"jours : {jours}\nheures : {heures}\nminutes : {minutes}\nsecondes : {secondes}");
 #endregion
 
-# region bool
+# region Booléens
 //bool flag = false;
 
 //int age = 42;
@@ -123,7 +123,7 @@
 
 #endregion
 
-#region Structures contionnelles
+#region Structures conditionnelles
 //bool estAutorise = true;
 //// (cond à vérifier)
 //if(estAutorise)
@@ -203,16 +203,16 @@
 //prixPromo = prix - (prix * (promo ?? 0) / 100);
 //Console.WriteLine(prixPromo);
 
-int jours = 42;
-//string j = jours == 1 ? "Lundi" : jours == 2 ? "Mardi" : jours == 3 ? "Mercredi": "Jeudi";//...
-string j = jours switch
-{
-    1 => "Lundi",
-    2 => "Mardi",
-    3 => "Mercredi",
-    4 => "Jeudi",
-    _ => "Jour inconnu"
-};
-Console.WriteLine(j);
+//int jours = 42;
+////string j = jours == 1 ? "Lundi" : jours == 2 ? "Mardi" : jours == 3 ? "Mercredi": "Jeudi";//...
+//string j = jours switch
+//{
+//    1 => "Lundi",
+//    2 => "Mardi",
+//    3 => "Mercredi",
+//    4 => "Jeudi",
+//    _ => "Jour inconnu"
+//};
+//Console.WriteLine(j);
 
 #endregion
