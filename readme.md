@@ -70,7 +70,10 @@ int a = 5, b = 7;
 Console.WriteLine("");
 
 // sans retour à la ligne
-Console.WriteLine();
+Console.Write("");
+
+// vider la console
+Console.Clear();
 ```
 
 - Lire dans la console
