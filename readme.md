@@ -172,3 +172,19 @@ var variableAAffecter = variableAComparer switch {
 }; 
 ```
 
+# Boucles
+
+- while
+```cs
+while(condition) {
+    // instructions à répéter tant que condition est vrai
+}
+```
+
+- do ... while
+```cs
+do {
+    // instructions exécutées et à répéter tant que condition est vrai
+} while(condittion);
+```
+
