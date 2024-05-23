@@ -272,25 +272,48 @@
 #region Tableau
 
 #region Démonstration 01
-const int TAILLE = 5;
-//Partie déclarative : Définition d'une variable
-double[] tab;
-//Partie instanciation : la mémoire crée l'objet du tableau concrètement : nous obtenons un tableau de 15 fois 0.0
-tab = new double[TAILLE];
-int nbElem = 0, i = 0;
+//const int TAILLE = 5;
+////Partie déclarative : Définition d'une variable
+//double[] tab;
+////Partie instanciation : la mémoire crée l'objet du tableau concrètement : nous obtenons un tableau de 15 fois 0.0
+//tab = new double[TAILLE];
+//int nbElem = 0, i = 0;
 
-while (nbElem < tab.Length)
+//while (nbElem < tab.Length)
+//{
+//    //double.Parse(string value) : permet la conversion d'un string vers du double
+//    tab[nbElem] = double.Parse(Console.ReadLine());
+//    nbElem = nbElem + 1; //nbElem += 1; //nbElem++;
+//}
+
+//while (i < nbElem)
+//{
+//    Console.WriteLine($"Le élève n°{i+1} à une note de {tab[i]}/100.");
+//    i++;
+//}
+#endregion
+#region Démonstration 02 : Boucle POUR
+
+const int TAILLE = 10;
+int[] tab = new int[TAILLE];
+int nbElem;
+
+tab[0] = 2;
+for (nbElem = 1; nbElem < TAILLE; nbElem++)
 {
-    //double.Parse(string value) : permet la conversion d'un string vers du double
-    tab[nbElem] = double.Parse(Console.ReadLine());
-    nbElem = nbElem + 1; //nbElem += 1; //nbElem++;
+    tab[nbElem] = tab[nbElem - 1] * 2;
 }
 
-while (i < nbElem)
+//index n'existe pas encore
+
+for (int index = 0; index < nbElem; index++)
 {
-    Console.WriteLine($"Le élève n°{i+1} à une note de {tab[i]}/100.");
-    i++;
+    //index a été déclaré et initialisé
+    Console.WriteLine(tab[index]);
 }
+//index n'existe plus, oublié dans la mémoire
+
+
 #endregion
 
 #endregion
