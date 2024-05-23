@@ -268,3 +268,29 @@
 //Console.SetCursorPosition(10, 10);
 //Console.ForegroundColor = ConsoleColor.Red;
 //Console.Write("♥");
+
+#region Tableau
+
+#region Démonstration 01
+const int TAILLE = 5;
+//Partie déclarative : Définition d'une variable
+double[] tab;
+//Partie instanciation : la mémoire crée l'objet du tableau concrètement : nous obtenons un tableau de 15 fois 0.0
+tab = new double[TAILLE];
+int nbElem = 0, i = 0;
+
+while (nbElem < tab.Length)
+{
+    //double.Parse(string value) : permet la conversion d'un string vers du double
+    tab[nbElem] = double.Parse(Console.ReadLine());
+    nbElem = nbElem + 1; //nbElem += 1; //nbElem++;
+}
+
+while (i < nbElem)
+{
+    Console.WriteLine($"Le élève n°{i+1} à une note de {tab[i]}/100.");
+    i++;
+}
+#endregion
+
+#endregion
