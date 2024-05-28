@@ -318,3 +318,46 @@
 
 //#endregion
 
+
+
+void AfficherDe1A(int nbIteration)
+{
+    for (int i = 1; i <= nbIteration; i++)
+    {
+        Console.WriteLine(i);
+    }
+}
+
+// sous programme qui ne retourne rien (procedure)
+// AfficherDe1A(42);
+//AfficherDe1A(7);
+//AfficherDe1A(8);
+//AfficherDe1A(42);
+
+// sous programme qui retourne un entier (fonction)
+// int nb = int.Parse("42");
+
+
+double? Diviser(double nb1, double nb2)
+{
+    if(nb2 == 0)
+    {
+        return null;
+    }
+    else
+    {
+        return nb1 / nb2;
+    }
+}
+
+double.TryParse(Console.ReadLine(), out double a);
+double.TryParse(Console.ReadLine(), out double b);
+
+double? valeur = Diviser(a, b);
+
+Console.WriteLine(valeur);
+
+// main => fonctions
+
+
+
